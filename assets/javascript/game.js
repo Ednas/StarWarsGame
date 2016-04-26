@@ -62,3 +62,49 @@ fight function();{
 	var hitPoints
 	var defense
 }
+
+//please make code happen...
+randCharacters : 
+            {
+            Jack: {
+            name: "Jack",
+            totalHealth: 200,
+            currentHealth: 200,
+            attack: 8,
+            counterAttack: 25,
+            //mana and return mana on attack clicks?
+            //defense
+            //weakness
+            //ability
+            image: "<img class='pixelPic' src='assets/images/jackR.png'>",
+            imageComp: "<img class='pixelPic' src='assets/images/jackL.png'>"},
+
+            Spike: {
+            name: "Spike",
+            totalHealth: 400,
+            currentHealth: 400,
+            attack: 2,
+            counterAttack: 30,
+            // ability taunt,
+            image: "<img class='pixelPic' src='assets/images/spikeR.jpg'>",
+            imageComp: "<img class='pixelPic' src='assets/images/spikeL.jpg'>"},
+
+            Respite: {
+            name: "Respite", 
+            totalHealth: 200,
+            currentHealth: 200,
+            attack: 4,
+            counterAttack: 20,
+            // ability heal,
+            image: "<img class='pixelPic' src='assets/images/respiteR.jpg'>",
+            imageComp: "<img class='pixelPic' src='assets/images/respiteL.jpg'>"},
+
+            Radioactive: {
+            name: "Radioactive",
+            totalHealth: 250,
+            currentHealth: 250,
+            attack: 4,
+            counterAttack: 25,
+            image: "<img class='pixelPic' src='assets/images/rSantaR.png'>",
+            imageComp: "<img class='pixelPic' src='assets/images/rSantaL.png'>"}
+        },
