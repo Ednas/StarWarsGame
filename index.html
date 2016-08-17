@@ -10,7 +10,8 @@
 	<link href='https://fonts.googleapis.com/css?family=Inconsolata:700' rel='stylesheet' type='text/css'>
 
 	<!-- JQuery -->
-	<script src="https://code.jquery.com/jquery.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </head>
 <body>
@@ -18,8 +19,17 @@
 			<h1>Star Wars RPG Game</h1>
 	</header>
 
+	<div id="main-game-section">
+		<div id="characters-section">
+			<div class="section-title">Select Your Character</div>
+		</div>
+
+
 <div class="characterWrapper">
-	
+		<div id="characters-section">
+			<div class="section-title">Select Your Character</div>
+		</div>
+
 		<div class="bena characters">
 			<img src="assets/images/benkenobi.jpg" alt="BenKenobi">
 
@@ -43,17 +53,31 @@
 
 </div>
 
-	<div class="attack">
-		<p>Enemies Available To Attack
-		<br>
-		<button id="attacked" value=0><h1>ATTACK</h1></button>
-		<br>
-		Fight Section</p>
-	</div>
+		
 
-	<div class="defender">
-		<p>Defender</p>
+		<div id="selected-character-section">
+			<div class="section-title">Your Character</div>
+			<div id="selected-character"></div>
+		</div>
 
-	</div>
+		<div id="available-to-attack-section">
+			<div class="section-title">Enemies Available To Attack</div>
+		</div>
+
+		<div class="section-title">Fight Section</div>
+		<div id="fight-section">
+			<button id="attack-button">Attack</button>
+		</div>
+		<div id="action">
+			<div class="character-section">
+				<div class="section-title">Defender</div>
+				<div id="defender"></div>
+			</div>
+		</div>
+
+	
+	<div id="gameMessage"></div>
+</div>
+	
 </body>
 </html>

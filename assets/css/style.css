@@ -10,26 +10,104 @@ header {
 	color: #ffffff;
 }
 .characterWrapper {
-	width: 100%;
+	width: 75%;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .characters{
 	width: 25%;
 	float: left;
+	border-style: solid;
+	border-color: purple;
+	border-width: 3px;
+	cursor: pointer;
+	display: inline-block;
+	background-color: white;
 }
 
 
-.characters img {
-	width: 40%;
+.characters img {	
+	width: 50%;
 	border: 0 none;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .characters h3 {
 	border-bottom: 0;
-	background: #000;
-	color: #fff;
 	text-align: center;
 	padding: 15px;
 	line-height: 30px;
 	margin-bottom: 0;
 	font-weight: 300;
+}
+
+.attack {
+	text-align: center;
+}
+.action {
+	margin: 15px 0px;
+}
+
+
+.character-name {
+	text-align: center;
+}
+
+.character-health {
+	text-align: center;
+}
+
+.enemy {
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	cursor: pointer;
+	display: inline-block;
+	background-color: red;
+}
+
+#selected-character {
+	width: 190px;
+	height: 160px;
+}
+
+#attacker {
+	width: 190px;
+	height: 160px;
+}
+
+#defender {
+	width: 190px;
+	height: 160px;
+}
+
+#defender-name {
+	text-align: center;
+}
+
+#defender-image {
+	padding: 0px 16px;
+	margin: 3px 0px;
+}
+
+#defender-health {
+	text-align: center;
+}
+
+#choose-enemy-button {
+	visibility: hidden;
+}
+
+#restart-button {
+	visibility: hidden;
+}
+
+#turn-counter {
+	font-size: 150%;
+}
+.target-enemy {
+	background-color: black;
+	color: white;
 }
