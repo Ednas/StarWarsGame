@@ -1,5 +1,5 @@
 //Global variables
-
+$(document).ready(function() {
 //Array of Playable Characters
 var characters = {
     'ben': {
@@ -27,7 +27,8 @@ var characters = {
         name: 'rey',
         health: 180,
         attack: 7,
-        imageUrl: "assets/images/rey.jpg"
+        imageUrl: "assets/images/rey.jpg",
+        enemyAttackBack: 20
     }
 };
 
@@ -196,3 +197,5 @@ var renderOne = function(character, renderArea, makeChar) {
     $("body").append(gameState);
     $("body").append(restart);
   };
+
+});

@@ -1,13 +1,12 @@
 body {
 	background-image: url("../images/sw.jpg");
-	color: #000000;
+	color: #ffffff;
 	font-family: 'Inconsolata';
 }
 header {
 	font-size: 50px;
 	text-align: center;
 	padding: 20px;
-	color: #ffffff;
 }
 .characterWrapper {
 	width: 75%;
