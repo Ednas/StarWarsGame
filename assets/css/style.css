@@ -1,5 +1,6 @@
 body {
-	background-image: url("../images/sw.jpg");
+	background-color: #C2C3C7;
+/*	background-image: url("../images/sw.jpg");*/
 	color: #ffffff;
 	font-family: 'Inconsolata';
 }
@@ -14,26 +15,22 @@ header {
 	margin-left: auto;
 }
 
-.characters{
+.character{
 	width: 25%;
 	float: left;
-	border-style: solid;
-	border-color: purple;
-	border-width: 3px;
 	cursor: pointer;
 	display: inline-block;
-	background-color: white;
 }
 
 
-.characters img {	
-	width: 50%;
+.character img {	
 	border: 0 none;
 	display: block;
     margin-left: auto;
     margin-right: auto;
+    height: 200px;
 }
-.characters h3 {
+.character h3 {
 	border-bottom: 0;
 	text-align: center;
 	padding: 15px;
@@ -109,4 +106,11 @@ header {
 .target-enemy {
 	background-color: black;
 	color: white;
+}
+@media only screen and (max-device-width : 1000px) {
+
+.character {
+	display: block;
+}
+
 }

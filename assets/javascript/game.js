@@ -2,34 +2,37 @@
 $(document).ready(function() {
 //Array of Playable Characters
 
-var audio = new Audio('starWars.mp3');
+var audio = new Audio('assets/audio/imperial_march.mp3');
+audio.play();
+
+
 var characters = {
     'ben': {
-        name: 'ben',
+        name: 'rey',
         health: 120,
         attack: 8,
-        imageUrl: "assets/images/benkenobi.jpg",
+        imageUrl: "assets/images/rey.png",
         enemyAttackBack: 15
     }, 
     'darth': {
         name: 'darth',
         health: 100,
         attack: 14,
-        imageUrl: "assets/images/darthvader.jpg",
+        imageUrl: "assets/images/darthVader.png",
         enemyAttackBack: 5
     }, 
     'finn': {
         name: 'finn',
         health: 150,
         attack: 8,
-        imageUrl: "assets/images/finn.jpg",
+        imageUrl: "assets/images/finn.png",
         enemyAttackBack: 20
     }, 
     'rey': {
-        name: 'rey',
+        name: 'stormtrooper',
         health: 180,
         attack: 7,
-        imageUrl: "assets/images/rey.jpg",
+        imageUrl: "assets/images/trooper.png",
         enemyAttackBack: 20
     }
 };
