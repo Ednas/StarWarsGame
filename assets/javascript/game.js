@@ -1,9 +1,11 @@
 //Global variables
 $(document).ready(function() {
 //Array of Playable Characters
+
+var audio = new Audio('starWars.mp3');
 var characters = {
     'ben': {
-        name: 'Ben',
+        name: 'ben',
         health: 120,
         attack: 8,
         imageUrl: "assets/images/benkenobi.jpg",
@@ -49,6 +51,8 @@ var renderOne = function(character, renderArea, makeChar) {
     var charHealth = $("<div class='character-health'>").text(character.health);
     charDiv.append(charName).append(charImage).append(charHealth);
     $(renderArea).append(charDiv);
+    //Capitalizes the first letter in characters name
+    $('.character').css('textTransform', 'capitalize');
     // conditional render
     if (makeChar == 'enemy') {
       $(charDiv).addClass("enemy");
@@ -179,6 +183,8 @@ var renderOne = function(character, renderArea, makeChar) {
         if (killCount >= 3) {
           renderMessage("clearMessage");
           restartGame("You Won!!!! GAME OVER!!!");
+          // The following line will play the audio file you linked to above:
+          audio.play();
         }
       }
       turnCounter++;
@@ -188,6 +194,7 @@ var renderOne = function(character, renderArea, makeChar) {
     }
   });
 
+//Restarts the game - renders a reset button
   var restartGame = function(inputEndGame) {
     //When 'Restart' button is clicked, reload the page.
     var restart = $('<button>Restart</button>').click(function() {
