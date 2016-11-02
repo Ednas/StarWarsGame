@@ -92,11 +92,15 @@ var renderOne = function(character, renderArea, makeChar) {
     }
     //render player character
     if (areaRender == '#selected-character') {
+      $('#selected-character').prepend("Your Character");       
       renderOne(charObj, areaRender, '');
+      $('#attack-button').css('visibility', 'visible');
     }
     //render combatants
     if (areaRender == '#available-to-attack-section') {
+        $('#available-to-attack-section').prepend("Choose Your Next Opponent");      
       for (var i = 0; i < charObj.length; i++) {
+
         renderOne(charObj[i], areaRender, 'enemy');
       }
       //render one enemy to defender area
@@ -117,6 +121,7 @@ var renderOne = function(character, renderArea, makeChar) {
       for (var i = 0; i < combatants.length; i++) {
         //add enemy to defender area
         if (combatants[i].name == charObj) {
+          $('#defender').append("Your selected opponent")
           renderOne(combatants[i], areaRender, 'defender');
         }
       }
@@ -124,6 +129,7 @@ var renderOne = function(character, renderArea, makeChar) {
     //re-render defender when attacked
     if (areaRender == 'playerDamage') {
       $('#defender').empty();
+      $('#defender').append("Your selected opponent")
       renderOne(charObj, '#defender', 'defender');
       lightsaber.play();
     }
@@ -209,7 +215,7 @@ var renderOne = function(character, renderArea, makeChar) {
 //Restarts the game - renders a reset button
   var restartGame = function(inputEndGame) {
     //When 'Restart' button is clicked, reload the page.
-    var restart = $('<button>Restart</button>').click(function() {
+    var restart = $('<button class="btn">Restart</button>').click(function() {
       location.reload();
     });
     var gameState = $("<div>").text(inputEndGame);
