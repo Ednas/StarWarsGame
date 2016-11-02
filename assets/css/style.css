@@ -1,23 +1,32 @@
+/*---------------------*/
+/* Body and background */
+/*---------------------*/
 body {
   background-color: #C2C3C7;
   font-family: 'Montserrat', sans-serif;
 }
-
 header {
   font-size: 50px;
   text-align: center;
   padding: 20px;
 }
-
-/*div {
-  border: solid green;
-  padding: 10px;
-}*/
-
 .characterWrapper {
   width: 75%;
   margin-right: auto;
   margin-left: auto;
+}
+#gameMessage {
+  text-align: center;
+  font-size: 10px;
+}
+#choose-enemy-button {
+  visibility: hidden;
+}
+#restart-button {
+  visibility: hidden;
+}
+#turn-counter {
+  font-size: 150%;
 }
 
 /*---------------------*/
@@ -26,11 +35,9 @@ header {
 .character {
   width: 153px;
   margin: 0px 40px 0px 40px;
-/*  float: left;
-*/  cursor: pointer;
+  cursor: pointer;
   display: inline-block;
 }
-
 .character img {
   border: 0 none;
   display: block;
@@ -38,15 +45,6 @@ header {
   margin-right: auto;
   height: 200px;
 }
-
-.attack {
-  text-align: center;
-}
-
-.action {
-  margin: 15px 0px;
-}
-
 .character-name {
   text-align: center;
   text-transform: capitalize;
@@ -54,11 +52,26 @@ header {
   font-family: 'Itim', cursive;
   font-size: 20px;
 }
-
 .character-health {
   text-align: center;
 }
 
+/*---------------------*/
+/*      Fighting       */
+/*---------------------*/
+.attack {
+  text-align: center;
+}
+.action {
+  margin: 15px 0px;
+}
+#attack-button{
+	visibility: hidden;
+}
+.btn {
+	background: #000;
+	color: #DBD2C6;	
+}
 .enemy {
 	width: 153px;
 	margin: 5px;
@@ -70,7 +83,17 @@ header {
   background-color: red;
   float: left;
 }
+#attacker {
+	padding: 5px;
+}
+.target-enemy {
+  background-color: black;
+  color: white;
+}
 
+/*---------------------*/
+/* Available Oponents  */
+/*---------------------*/
 #available-to-attack-section {
   float: right;
 }
@@ -78,55 +101,28 @@ header {
 	height: 100px;
 }
 
-/*#selected-character {
-  width: 190px;
-  height: 160px;
-}*/
-
-#gameMessage {
-  text-align: center;
-  font-size: 10px;
-}
-
-#attacker {
-	padding: 5px;
-}
+/*---------------------*/
+/*      Defender       */
+/*---------------------*/
 
 /*#defender {
   width: 190px;
   height: 160px;
 }*/
-
 #defender-name {
   text-align: center;
 }
-
 #defender-image {
   padding: 0px 16px;
   margin: 3px 0px;
 }
-
 #defender-health {
   text-align: center;
 }
 
-#choose-enemy-button {
-  visibility: hidden;
-}
-
-#restart-button {
-  visibility: hidden;
-}
-
-#turn-counter {
-  font-size: 150%;
-}
-
-.target-enemy {
-  background-color: black;
-  color: white;
-}
-
+/*---------------------*/
+/*   Media Queries     */
+/*---------------------*/
 @media only screen and (max-device-width: 1000px) {
   .character {
     display: block;
