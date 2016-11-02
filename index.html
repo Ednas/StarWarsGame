@@ -4,22 +4,26 @@
 	<meta charset="UTF-8">
 	<title>Star Wars RPG Game</title>
 
-	<!-- Stylesheet -->
+	<!-- Reset stylesheet -->
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- My Stylesheet -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Inconsolata:700' rel='stylesheet' type='text/css'>
 
-	<!-- JQuery -->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
 
 </head>
 <body>
 	<header>
-			<h1>Star Wars RPG Game</h1>
+	
+			<img src="assets/images/swrpg.png">
+
 	</header>
 
-	<div id="main-game-section">
+	<div class="container" id="main-game-section">
 		<div id="characters-section">
 			<div class="section-title">Select Your Character</div>
 		</div>
@@ -35,7 +39,7 @@
 
 		<div class="section-title">Fight Section</div>
 		<div id="fight-section">
-			<button id="attack-button">Attack</button>
+			<button class="btn" id="attack-button">Attack</button>
 		</div>
 		<div id="action">
 			<div class="character-section">
@@ -45,8 +49,14 @@
 		</div>
 
 	
-		<div id="gameMessage"></div>
+		<div class="jumbotron" id="gameMessage"></div>
 	</div>
-	
+	<!-- Latest compiled and minified JavaScript for bootstrap -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- JQuery -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<!-- Game logic -->
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>
