@@ -1,119 +1,127 @@
 body {
-	background-color: #C2C3C7;
-/*	background-image: url("../images/sw.jpg");*/
-	font-family: 'Inconsolata';
+  background-color: #C2C3C7;
+  font-family: 'Montserrat', sans-serif;
 }
+
 header {
-	font-size: 50px;
-	text-align: center;
-	padding: 20px;
+  font-size: 50px;
+  text-align: center;
+  padding: 20px;
 }
+div {
+  border: solid green;
+}
+
 .characterWrapper {
-	width: 75%;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-.character{
-	width: 25%;
-	float: left;
-	cursor: pointer;
-	display: inline-block;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 
-.character img {	
-	border: 0 none;
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 200px;
+/*Character rendering */
+/* Google fonts font-family: 'Itim', cursive;
+font-family: 'Chonburi', cursive; */
+.character {
+  width: 25%;
+  float: left;
+  cursor: pointer;
+  display: inline-block;
 }
-.character h3 {
-	border-bottom: 0;
-	text-align: center;
-	padding: 15px;
-	line-height: 30px;
-	margin-bottom: 0;
-	font-weight: 300;
+
+.character img {
+  border: 0 none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
 }
+
 
 .attack {
-	text-align: center;
-}
-.action {
-	margin: 15px 0px;
+  text-align: center;
 }
 
+.action {
+  margin: 15px 0px;
+}
 
 .character-name {
-	text-align: center;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 30px;
+  font-family: 'Itim', cursive;
+  font-size: 20px;
 }
 
 .character-health {
-	text-align: center;
+  text-align: center;
 }
 
 .enemy {
-	border-style: solid;
-	border-color: black;
-	border-width: 1px;
-	cursor: pointer;
-	display: inline-block;
-	background-color: red;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  background-color: red;
 }
+
 #available-to-attack-section {
-	float: right;
+  float: right;
 }
+
 #selected-character {
-	width: 190px;
-	height: 160px;
+  width: 190px;
+  height: 160px;
 }
+
 #gameMessage {
-	text-align: center;
+  text-align: center;
 }
+
 #attacker {
-	width: 190px;
-	height: 160px;
+  width: 190px;
+  height: 160px;
 }
 
 #defender {
-	width: 190px;
-	height: 160px;
+  width: 190px;
+  height: 160px;
 }
 
 #defender-name {
-	text-align: center;
+  text-align: center;
 }
 
 #defender-image {
-	padding: 0px 16px;
-	margin: 3px 0px;
+  padding: 0px 16px;
+  margin: 3px 0px;
 }
 
 #defender-health {
-	text-align: center;
+  text-align: center;
 }
 
 #choose-enemy-button {
-	visibility: hidden;
+  visibility: hidden;
 }
 
 #restart-button {
-	visibility: hidden;
+  visibility: hidden;
 }
 
 #turn-counter {
-	font-size: 150%;
+  font-size: 150%;
 }
+
 .target-enemy {
-	background-color: black;
-	color: white;
-}
-@media only screen and (max-device-width : 1000px) {
-
-.character {
-	display: block;
+  background-color: black;
+  color: white;
 }
 
+@media only screen and (max-device-width: 1000px) {
+  .character {
+    display: block;
+  }
 }

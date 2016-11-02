@@ -7,7 +7,7 @@ audio.play();
 
 
 var characters = {
-    'ben': {
+    'rey': {
         name: 'rey',
         health: 120,
         attack: 8,
@@ -28,7 +28,7 @@ var characters = {
         imageUrl: "assets/images/finn.png",
         enemyAttackBack: 20
     }, 
-    'rey': {
+    'stormtrooper': {
         name: 'stormtrooper',
         health: 180,
         attack: 7,
@@ -48,20 +48,20 @@ var killCount = 0;
 
 var renderOne = function(character, renderArea, makeChar) {
     //character: obj, renderArea: class/id, makeChar: string
-    var charDiv = $("<div class='character' data-name='" + character.name + "'>");
+    var charDiv = $("<div class='character'> <data-name='" + character.name + "'>");
     var charName = $("<div class='character-name'>").text(character.name);
     var charImage = $("<img alt='image' class='character-image'>").attr("src", character.imageUrl);
     var charHealth = $("<div class='character-health'>").text(character.health);
     charDiv.append(charName).append(charImage).append(charHealth);
     $(renderArea).append(charDiv);
     //Capitalizes the first letter in characters name
-    $('.character').css('textTransform', 'capitalize');
+    // $('.character').css('textTransform', 'capitalize');
     // conditional render
     if (makeChar == 'enemy') {
-      $(charDiv).addClass("enemy");
+      $(charDiv).addClass('enemy');
     } else if (makeChar == 'defender') {
       currDefender = character;
-      $(charDiv).addClass("target-enemy");
+      $(charDiv).addClass('target-enemy');
     }
   };
 
