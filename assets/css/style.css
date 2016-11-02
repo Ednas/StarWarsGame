@@ -9,10 +9,10 @@ header {
   padding: 20px;
 }
 
-div {
+/*div {
   border: solid green;
   padding: 10px;
-}
+}*/
 
 .characterWrapper {
   width: 75%;
@@ -24,9 +24,10 @@ div {
 /* Character rendering */
 /*---------------------*/
 .character {
-  width: 25%;
-  float: left;
-  cursor: pointer;
+  width: 153px;
+  margin: 0px 40px 0px 40px;
+/*  float: left;
+*/  cursor: pointer;
   display: inline-block;
 }
 
@@ -74,7 +75,7 @@ div {
   float: right;
 }
 #available-to-attack-section img {
-	height: 150px;
+	height: 100px;
 }
 
 /*#selected-character {
@@ -84,7 +85,7 @@ div {
 
 #gameMessage {
   text-align: center;
-  font-size: 30px;
+  font-size: 10px;
 }
 
 #attacker {

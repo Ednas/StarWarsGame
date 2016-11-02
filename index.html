@@ -20,27 +20,33 @@
     <img src="assets/images/swrpg.png">
   </header>
   <div class="container" id="main-game-section">
-    <div class="container" id="characters-section">
+    <div class="container col-lg-12" id="characters-section">
       <div class="container section-title">Select Your Character</div>
     </div>
-    <div class="container" id="selected-character-section">
-      <div class="section-title">Your Character</div>
+    <div class="container col-lg-4" id="selected-character-section">
+      <div class="section-title container">Your Character</div>
       <div id="selected-character"></div>
     </div>
-    <div class="container" id="available-to-attack-section">
-      <div class="container section-title">Enemies Available To Attack</div>
-    </div>
-    <div class="section-title">Fight Section</div>
-    <div id="fight-section">
-      <button class="btn" id="attack-button">Attack</button>
-    </div>
+     <div class="section-title container col-lg-4">Fight Section
+    	<div id="fight-section">
+      		<button class="btn" id="attack-button">Attack</button>
+      		<div class="jumbotron" id="gameMessage"></div>
+    	</div>   
+    </div>	
     <div id="action">
       <div class="character-section">
-        <div class="section-title">Defender</div>
-        <div id="defender"></div>
+        <div class="container section-title col-lg-3">Defend
+        	<div id="defender"></div>
+        </div>	
       </div>
+    </div>    
+    <div class="container" id="available-to-attack-section">
+      <div class="section-title">Enemies Available To Attack</div>
     </div>
-    <div class="jumbotron" id="gameMessage"></div>
+
+
+<!--     <div class="jumbotron" id="gameMessage"></div>
+ -->
   </div>
   <!-- JQuery -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
