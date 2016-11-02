@@ -3,8 +3,12 @@ $(document).ready(function() {
 //Array of Playable Characters
 
 var audio = new Audio('assets/audio/imperial_march.mp3');
-audio.play();
-
+// audio.play();
+var force = new Audio('assets/audio/force.mp3');
+var blaster = new Audio('assets/audio/blaster-firing.mp3');
+var jediKnow = new Audio('assets/audio/jedi-know.mp3');
+var lightsaber = new Audio('assets/audio/light-saber-on.mp3');
+var rtwoo = new Audio('assets/audio/R2D2.mp3');
 
 var characters = {
     'rey': {
@@ -121,6 +125,7 @@ var renderOne = function(character, renderArea, makeChar) {
     if (areaRender == 'playerDamage') {
       $('#defender').empty();
       renderOne(charObj, '#defender', 'defender');
+      lightsaber.play();
     }
     //re-render player character when attacked
     if (areaRender == 'enemyDamage') {
@@ -132,6 +137,7 @@ var renderOne = function(character, renderArea, makeChar) {
       $('#defender').empty();
       var gameStateMessage = "You have defated " + charObj.name + ", you can choose to fight another enemy.";
       renderMessage(gameStateMessage);
+      blaster.play();
     }
   };
   //this is to render all characters for user to choose their computer
@@ -177,7 +183,8 @@ var renderOne = function(character, renderArea, makeChar) {
         renderCharacters(currSelectedCharacter, 'enemyDamage');
         if (currSelectedCharacter.health <= 0) {
           renderMessage("clearMessage");
-          restartGame("You been defeated...GAME OVER!!!");
+          restartGame("You have been defeated...GAME OVER!!!");
+          force.play();
           $("#attack-button").unbind("click");
         }
       } else {
@@ -186,6 +193,7 @@ var renderOne = function(character, renderArea, makeChar) {
         if (killCount >= 3) {
           renderMessage("clearMessage");
           restartGame("You Won!!!! GAME OVER!!!");
+          jediKnow.play();
           // The following line will play the audio file you linked to above:
           audio.play();
         }
@@ -194,6 +202,7 @@ var renderOne = function(character, renderArea, makeChar) {
     } else {
       renderMessage("clearMessage");
       renderMessage("No enemy here.");
+      rtwoo.play();
     }
   });
 
