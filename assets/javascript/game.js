@@ -48,7 +48,7 @@ var killCount = 0;
 
 var renderOne = function(character, renderArea, makeChar) {
     //character: obj, renderArea: class/id, makeChar: string
-    var charDiv = $("<div class='character'> <data-name='" + character.name + "'>");
+    var charDiv = $("<div class='character' data-name='" + character.name + "'>");
     var charName = $("<div class='character-name'>").text(character.name);
     var charImage = $("<img alt='image' class='character-image'>").attr("src", character.imageUrl);
     var charHealth = $("<div class='character-health'>").text(character.health);
@@ -204,8 +204,8 @@ var renderOne = function(character, renderArea, makeChar) {
       location.reload();
     });
     var gameState = $("<div>").text(inputEndGame);
-    $("body").append(gameState);
-    $("body").append(restart);
+    $("#gameMessage").append(gameState);
+    $("#gameMessage").append(restart);
   };
 
 });

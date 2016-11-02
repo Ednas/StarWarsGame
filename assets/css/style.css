@@ -8,8 +8,10 @@ header {
   text-align: center;
   padding: 20px;
 }
+
 div {
   border: solid green;
+  padding: 10px;
 }
 
 .characterWrapper {
@@ -18,10 +20,9 @@ div {
   margin-left: auto;
 }
 
-
-/*Character rendering */
-/* Google fonts font-family: 'Itim', cursive;
-font-family: 'Chonburi', cursive; */
+/*---------------------*/
+/* Character rendering */
+/*---------------------*/
 .character {
   width: 25%;
   float: left;
@@ -36,7 +37,6 @@ font-family: 'Chonburi', cursive; */
   margin-right: auto;
   height: 200px;
 }
-
 
 .attack {
   text-align: center;
@@ -59,36 +59,42 @@ font-family: 'Chonburi', cursive; */
 }
 
 .enemy {
+	width: 153px;
+	margin: 5px;
   border-style: solid;
   border-color: black;
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
   background-color: red;
+  float: left;
 }
 
 #available-to-attack-section {
   float: right;
 }
+#available-to-attack-section img {
+	height: 150px;
+}
 
-#selected-character {
+/*#selected-character {
   width: 190px;
   height: 160px;
-}
+}*/
 
 #gameMessage {
   text-align: center;
+  font-size: 30px;
 }
 
 #attacker {
-  width: 190px;
-  height: 160px;
+	padding: 5px;
 }
 
-#defender {
+/*#defender {
   width: 190px;
   height: 160px;
-}
+}*/
 
 #defender-name {
   text-align: center;
