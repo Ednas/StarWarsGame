@@ -200,8 +200,11 @@ var renderOne = function(character, renderArea, makeChar) {
           renderMessage("clearMessage");
           restartGame("You Won!!!! GAME OVER!!!");
           jediKnow.play();
-          // The following line will play the audio file you linked to above:
+          // The following line will play the imperial march:
+          setTimeout(function() {
           audio.play();
+          }, 2000);
+
         }
       }
       turnCounter++;
