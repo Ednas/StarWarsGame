@@ -123,8 +123,13 @@ header {
 /*---------------------*/
 /*   Media Queries     */
 /*---------------------*/
-@media only screen and (max-device-width: 1000px) {
+@media only screen and (max-device-width: 768px) {
   .character {
     display: block;
+  height: 150px;    
+  }
+  #gameMessage {
+  font-size: 12px;
+
   }
 }
