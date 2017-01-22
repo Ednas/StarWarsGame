@@ -1,16 +1,16 @@
 //Global variables
 $(document).ready(function() {
+
+//audio clips
+let audio = new Audio('assets/audio/imperial_march.mp3');
+let force = new Audio('assets/audio/force.mp3');
+let blaster = new Audio('assets/audio/blaster-firing.mp3');
+let jediKnow = new Audio('assets/audio/jedi-know.mp3');
+let lightsaber = new Audio('assets/audio/light-saber-on.mp3');
+let rtwoo = new Audio('assets/audio/R2D2.mp3');
+
 //Array of Playable Characters
-
-var audio = new Audio('assets/audio/imperial_march.mp3');
-// audio.play();
-var force = new Audio('assets/audio/force.mp3');
-var blaster = new Audio('assets/audio/blaster-firing.mp3');
-var jediKnow = new Audio('assets/audio/jedi-know.mp3');
-var lightsaber = new Audio('assets/audio/light-saber-on.mp3');
-var rtwoo = new Audio('assets/audio/R2D2.mp3');
-
-var characters = {
+let characters = {
     'rey': {
         name: 'rey',
         health: 120,
